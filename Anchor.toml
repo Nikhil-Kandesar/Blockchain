@@ -1,0 +1,16 @@
+[features]
+seeds = true
+skip-lint = false
+
+[programs.localnet]
+abc_staking = "AbcStaK1ng111111111111111111111111111111111" # replace with `anchor keys list`
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "Localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "mocha -t 2000000 tests/**/*.ts"

@@ -1,0 +1,15 @@
+[package]
+name = "abc_staking"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "abc_staking"
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+anchor-lang = "0.30.1"
+anchor-spl = { version = "0.30.1", features = ["token", "associated-token"] }
+
+[features]
+no-entrypoint = []
